@@ -96,7 +96,7 @@ FSlateIcon FGitSourceControlState::GetIcon() const
 	case EWorkingCopyState::Unchanged: // Unchanged is the same as "Pristine" (not checked out) for Perforce, ie no icon
 	case EWorkingCopyState::Ignored:
 	default:
-		return FSlateIcon();
+		break; //return FSlateIcon();
 	}
 
 	return FSlateIcon();
